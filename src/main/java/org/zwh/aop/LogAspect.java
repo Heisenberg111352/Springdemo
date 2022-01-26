@@ -53,17 +53,17 @@ public class LogAspect {
         System.out.println("方法最后执行.....");
     }
 
-    @Around("webLogs()")
-    public Object arround(ProceedingJoinPoint pjp){
-        System.out.println("方法环绕通知开始.......");
-        try {
-            Object proceed = pjp.proceed();
-            System.out.println("方法环绕通知 结果是"+proceed);
-            return proceed;
-        }catch (Throwable e){
-            e.printStackTrace();
-            return null;
-        }
-
-    }
+//    @Around("webLogs()")
+//    public Object arround(ProceedingJoinPoint pjp){
+//        System.out.println("方法环绕通知开始.......");
+//        try {
+//            Object proceed = pjp.proceed();
+//            System.out.println("方法环绕通知 结果是"+proceed);
+//            return proceed;
+//        }catch (Throwable e){
+//            e.printStackTrace();
+//            return null;
+//        }
+//
+//    }
 }
